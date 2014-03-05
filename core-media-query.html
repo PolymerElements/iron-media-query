@@ -13,7 +13,7 @@ license that can be found in the LICENSE file.
  * The "queryMatches" property will be a boolean representing if the page matches that media query.
  *
  * core-media-query uses media query listeners to dynamically update the "queryMatches" property.
- * A "polymer-mediachange" event also fires when queryMatches changes.
+ * A "core-media-change" event also fires when queryMatches changes.
  *
  * Example:
  *
@@ -33,7 +33,6 @@ license that can be found in the LICENSE file.
     </style>
   </template>
   <script>
-
     Polymer('core-media-query', {
       /**
        * The Boolean return value of the media query
@@ -67,7 +66,7 @@ license that can be found in the LICENSE file.
       },
       queryHandler: function(mq) {
         this.queryMatches = mq.matches;
-        this.asyncFire('polymer-mediachange', mq);
+        this.asyncFire('core-media-change', mq);
       }
     });
   </script>
