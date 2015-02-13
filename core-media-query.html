@@ -10,11 +10,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <!--
 `core-media-query` can be used to data bind to a CSS media query.
 The `query` property is a bare CSS media query.
-The `querymatches` property is a boolean representing if the page matches that media query.
+The `queryMatches` property is a boolean representing if the page matches that media query.
 
 Example:
 
-    <core-media-query query="min-width: 600px" querymatches="{{querymatches}}"></core-media-query>
+    <core-media-query query="min-width: 600px" queryMatches="{{queryMatches}}"></core-media-query>
 
 @group Polymer Core Elements
 @element core-media-query
@@ -32,12 +32,11 @@ Example:
       /**
        * The Boolean return value of the media query.
        *
-       * @attribute querymatches
+       * @attribute queryMatches
        * @type Boolean
        * @default false
        */
-      /* FIXME(ffu): change to queryMatches when camel case is supported */
-      querymatches: {
+      queryMatches: {
         type: Boolean,
         readOnly: true,
         notify: true
@@ -59,7 +58,7 @@ Example:
 
     configure: function() {
       return {
-        querymatches: false
+        queryMatches: false
       }
     },
 
@@ -80,7 +79,7 @@ Example:
     },
 
     queryHandler: function(mq) {
-      this._setQuerymatches(mq.matches);
+      this._setQueryMatches(mq.matches);
     }
 
   });
