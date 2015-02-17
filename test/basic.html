@@ -9,63 +9,63 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <html>
-<head>
+  <head>
 
-  <title>core-media-query-basic</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>core-media-query-basic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-  <script src="../../web-component-tester/browser.js"></script>
-  <script src="../../test-fixture/test-fixture-mocha.js"></script>
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+    <script src="../../test-fixture/test-fixture-mocha.js"></script>
 
-  <link rel="import" href="../core-media-query.html">
-  <link rel="import" href="../../test-fixture/test-fixture.html">
+    <link rel="import" href="../core-media-query.html">
+    <link rel="import" href="../../test-fixture/test-fixture.html">
 
-</head>
-<body>
+  </head>
+  <body>
 
-  <test-fixture id="basic">
-    <template>
-      <core-media-query></core-media-query>
-    </template>
-  </test-fixture>
+    <test-fixture id="basic">
+      <template>
+        <core-media-query></core-media-query>
+      </template>
+    </test-fixture>
 
-  <script>
+    <script>
 
-    suite('basic', function() {
-      var mq;
+      suite('basic', function() {
+        var mq;
 
-      suite('set query with different values', function() {
-        setup(function () {
-          mq = fixture('basic');
-        });
+        suite('set query with different values', function() {
+          setup(function () {
+            mq = fixture('basic');
+          });
 
-        test('small min-width value', function() {
-          mq.query = 'min-width: 1px';
-          assert.equal(mq.queryMatches, true);
-        });
+          test('small min-width value', function() {
+            mq.query = 'min-width: 1px';
+            assert.equal(mq.queryMatches, true);
+          });
 
-        test('large min-width value', function() {
-          mq.query = 'min-width: 10000px';
-          assert.equal(mq.queryMatches, false);
-        });
+          test('large min-width value', function() {
+            mq.query = 'min-width: 10000px';
+            assert.equal(mq.queryMatches, false);
+          });
 
-        test('small max-width value', function() {
-          mq.query = 'max-width: 1px';
-          assert.equal(mq.queryMatches, false);
-        });
+          test('small max-width value', function() {
+            mq.query = 'max-width: 1px';
+            assert.equal(mq.queryMatches, false);
+          });
 
-        test('large max-width value', function() {
-          mq.query = 'max-width: 10000px';
-          assert.equal(mq.queryMatches, true);
+          test('large max-width value', function() {
+            mq.query = 'max-width: 10000px';
+            assert.equal(mq.queryMatches, true);
+          });
+
         });
 
       });
 
-    });
+    </script>
 
-  </script>
-
-</body>
+  </body>
 </html>

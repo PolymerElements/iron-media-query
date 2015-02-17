@@ -9,30 +9,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <!doctype html>
 <html>
-<head>
+  <head>
 
-  <title>core-media-query</title>
+    <title>core-media-query</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-  <link rel="import" href="../core-media-query.html">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../core-media-query.html">
 
-</head>
-<body>
+  </head>
+  <body>
 
-  <core-media-query query="min-width: 600px"></core-media-query>
-  <div id="output"></div>
+    <core-media-query query="min-width: 600px"></core-media-query>
+    <div id="output"></div>
 
-  <script>
+    <script>
 
-    var output = document.getElementById('output');
-    document.querySelector('core-media-query').addEventListener('query-matches-changed', function(e) {
-      output.textContent = 'query-matches changed: ' + e.detail.value;
-    });
+      var output = document.getElementById('output');
+      document.querySelector('core-media-query').addEventListener('query-matches-changed', function(e) {
+        output.textContent = 'query-matches changed: ' + e.detail.value;
+      });
 
-  </script>
+    </script>
 
-</body>
+  </body>
 </html>
