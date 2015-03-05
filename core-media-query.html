@@ -28,7 +28,8 @@ Example:
 
     is: 'core-media-query',
 
-    published: {
+    properties: {
+
       /**
        * The Boolean return value of the media query.
        *
@@ -38,6 +39,7 @@ Example:
        */
       queryMatches: {
         type: Boolean,
+        value: false,
         readOnly: true,
         notify: true
       },
@@ -47,19 +49,12 @@ Example:
        *
        * @attribute query
        * @type String
-       * @default ''
        */
-      query: String
-    },
-
-    bind: {
-      query: 'queryChanged'
-    },
-
-    configure: function() {
-      return {
-        queryMatches: false
+      query: {
+        type: String,
+        observer: 'queryChanged'
       }
+
     },
 
     created: function() {
