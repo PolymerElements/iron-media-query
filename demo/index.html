@@ -11,24 +11,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <html>
   <head>
 
-    <title>core-media-query</title>
+    <title>iron-media-query demo</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="../core-media-query.html">
+    <link rel="import" href="../iron-media-query.html">
 
   </head>
   <body>
 
-    <core-media-query query="(min-width: 600px)"></core-media-query>
+    <iron-media-query query="(min-width: 600px)"></iron-media-query>
     <div id="output"></div>
 
     <script>
-
       var output = document.getElementById('output');
-      document.querySelector('core-media-query').addEventListener('query-matches-changed', function(e) {
+      document.querySelector('iron-media-query').addEventListener('query-matches-changed', function(e) {
+        console.log("ok");
         output.textContent = 'query-matches changed: ' + e.detail.value;
       });
 

@@ -1,19 +1,31 @@
 {
-  "name": "core-media-query",
+  "name": "iron-media-query",
   "version": "0.8.0",
-  "private": true,
-  "main": "core-media-query.html",
   "authors": [
-    "Frankie Fu <ffu@google.com>",
     "The Polymer Authors"
   ],
-  "repository": "https://github.com/Polymer/core-media-query/tree/0.8-preview",
+  "keywords": [
+    "web-components",
+    "web-component",
+    "polymer"
+  ],
+  "main": "index.html",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PolymerElements/iron-media-query"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/PolymerElements/iron-media-query",
+  "ignore": [
+  ],
   "dependencies": {
-    "polymer": "Polymer/polymer#0.8-preview"
+    "polymer": "Polymer/polymer#v0.8.0-rc.4"
   },
   "devDependencies": {
-    "webcomponentsjs": "webcomponents/webcomponentsjs#master",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#~0.6.1",
     "web-component-tester": "Polymer/web-component-tester#^2.2.3",
-    "test-fixture": "Polymer/test-fixture#master"
+    "test-fixture": "PolymerElements/test-fixture#^0.8.0",
+    "iron-doc-viewer": "PolymerElements/iron-doc-viewer#^0.8.0"
   }
 }
