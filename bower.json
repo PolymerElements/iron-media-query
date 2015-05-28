@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git://github.com/PolymerElements/iron-media-query"
   },
-  "license": "MIT",
+  "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/PolymerElements/iron-media-query",
   "ignore": [],
   "dependencies": {
