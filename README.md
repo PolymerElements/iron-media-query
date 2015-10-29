@@ -9,8 +9,6 @@ Edit this file, and the bot will squash your changes :)
 
 -->
 
-_[Demo and API Docs](https://elements.polymer-project.org/elements/iron-media-query)_
-
 
 ##&lt;iron-media-query&gt;
 
