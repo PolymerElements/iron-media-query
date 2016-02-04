@@ -12,9 +12,9 @@ thing! https://github.com/PolymerLabs/tedium/issues
 
 -->
 
-[![Build Status](https://travis-ci.org/PolymerElements/iron-media-query.svg?branch=master)](https://travis-ci.org/PolymerElements/iron-media-query)
+[![Build status](https://travis-ci.org/PolymerElements/iron-media-query.svg?branch=master)](https://travis-ci.org/PolymerElements/iron-media-query)
 
-_[Demo and API Docs](https://elements.polymer-project.org/elements/iron-media-query)_
+_[Demo and API docs](https://elements.polymer-project.org/elements/iron-media-query)_
 
 
 ##&lt;iron-media-query&gt;
