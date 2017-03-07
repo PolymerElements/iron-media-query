@@ -19,7 +19,7 @@
   "homepage": "https://github.com/PolymerElements/iron-media-query",
   "ignore": [],
   "dependencies": {
-    "polymer": "Polymer/polymer#2.0-preview"
+    "polymer": "Polymer/polymer#^2.0.0-rc.1"
   },
   "devDependencies": {
     "paper-styles": "polymerelements/paper-styles#2.0-preview",
