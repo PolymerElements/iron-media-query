@@ -30,6 +30,12 @@ Example:
   Polymer({
 
     is: 'iron-media-query',
+    
+    /**
+     * Fired when the media query state changes.
+     *
+     * @event iron-media-change
+     */
 
     properties: {
 
@@ -112,9 +118,9 @@ Example:
       this._add();
       this.queryHandler(this._mq);
     },
-
     queryHandler: function(mq) {
       this._setQueryMatches(mq.matches);
+      this.fire('iron-media-change', mq);
     }
 
   });
