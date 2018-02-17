@@ -38,12 +38,12 @@ interface IronMediaQueryElement extends Polymer.Element {
   full: boolean|null|undefined;
   _boundMQHandler: (p0: MediaQueryList|null) => any;
   _mq: MediaQueryList|null;
-  attached(): any;
-  detached(): any;
-  _add(): any;
-  _remove(): any;
-  queryChanged(): any;
-  queryHandler(mq: any): any;
+  attached(): void;
+  detached(): void;
+  _add(): void;
+  _remove(): void;
+  queryChanged(): void;
+  queryHandler(mq: any): void;
 }
 
 interface HTMLElementTagNameMap {
