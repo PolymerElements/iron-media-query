@@ -26,7 +26,6 @@ Example:
 -->
 
 <script>
-
   Polymer({
 
     is: 'iron-media-query',
@@ -36,29 +35,18 @@ Example:
       /**
        * The Boolean return value of the media query.
        */
-      queryMatches: {
-        type: Boolean,
-        value: false,
-        readOnly: true,
-        notify: true
-      },
+      queryMatches: {type: Boolean, value: false, readOnly: true, notify: true},
 
       /**
        * The CSS media query to evaluate.
        */
-      query: {
-        type: String,
-        observer: 'queryChanged'
-      },
+      query: {type: String, observer: 'queryChanged'},
 
       /**
        * If true, the query attribute is assumed to be a complete media query
        * string rather than a single media feature.
        */
-      full: {
-        type: Boolean,
-        value: false
-      },
+      full: {type: Boolean, value: false},
 
       /**
        * @type {function(MediaQueryList)}
@@ -72,9 +60,7 @@ Example:
       /**
        * @type {MediaQueryList}
        */
-      _mq: {
-        value: null
-      }
+      _mq: {value: null}
     },
 
     attached: function() {
@@ -118,5 +104,4 @@ Example:
     }
 
   });
-
 </script>
