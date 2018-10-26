@@ -33,6 +33,7 @@ Example:
 Polymer({
 
   is: 'iron-media-query',
+  _template: null,
 
   properties: {
 
