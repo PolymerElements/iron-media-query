@@ -25,14 +25,13 @@ Example:
 </iron-media-query>
 ```
 
-@group Iron Elements
 @demo demo/index.html
-@hero hero.svg
 @element iron-media-query
 */
 Polymer({
 
   is: 'iron-media-query',
+  /** @override */
   _template: null,
 
   properties: {
@@ -68,11 +67,13 @@ Polymer({
     _mq: {value: null}
   },
 
+  /** @override */
   attached: function() {
     this.style.display = 'none';
     this.queryChanged();
   },
 
+  /** @override */
   detached: function() {
     this._remove();
   },
